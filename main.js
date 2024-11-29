@@ -1,3 +1,5 @@
+console.log();
+
 let nouvelElement = document.createElement("div");
 
 // Récupérer un élément parent existant
@@ -24,5 +26,17 @@ nouvelleDiv.appendChild(nouveauTitre)
 nouvelleDiv.appendChild(nouveauParagraphe)
 
 // On ajoute la div dans le body
+// let body = document.querySelector("body")
+// body.appendChild(nouvelleDiv)
+
+
+
+let div = ` 
+    <div>
+        <h1>"${contenuTitre}world of tank"</h1>
+        <p>${contenuParagraphe}</p>
+    </div>
+    `;
+
 let body = document.querySelector("body")
-body.appendChild(nouvelleDiv)
+body.innerHTML = div
